@@ -1,16 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import HomePage from './components/HomePage';
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path="/" exact component={HomePage} />
-        {/* 可以在此添加其他页面 */}
-      </Switch>
-    </Router>
+    <div className="App">
+      <HomePage />
+      <footer>东北育才沈抚示范学校家校互动平台 &copy; 2025</footer>
+    </div>
   );
 }
 
