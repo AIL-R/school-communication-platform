@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.navbar {
+  background-color: #4CAF50; /* 绿色 */
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

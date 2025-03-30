@@ -1,0 +1,50 @@
+.announcements-page {
+    background-color: #f7fafc;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .announcement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .announcement-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 80%;
+    max-width: 800px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .announcement-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .announcement-card h3 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .announcement-card .date {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .announcement-card .content {
+    font-size: 1rem;
+    color: #777;
+  }
+  

@@ -1,13 +1,21 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // 使用 Routes 替代 Switch
+import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
+import AnnouncementsPage from './components/AnnouncementsPage';
+import EventsPage from './components/EventsPage';
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <HomePage />
-      <footer>东北育才沈抚示范学校家校互动平台 &copy; 2025</footer>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} /> {/* 使用 element 传递组件 */}
+        <Route path="/announcements" element={<AnnouncementsPage />} />
+        <Route path="/events" element={<EventsPage />} />
+      </Routes>
+    </Router>
   );
 }
 
